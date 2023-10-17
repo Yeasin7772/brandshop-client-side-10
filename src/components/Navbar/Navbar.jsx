@@ -1,5 +1,19 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider";
 const Navbar = () => {
+
+    const { user, logOut } = useContext(AuthContext)
+
+    const handelLogOut = () => {
+        logOut()
+            .then(result => {
+                console.log(result.user);
+            })
+            .catch(error => {
+                console.error(error);
+            })
+    }
 
     const navLinks = <>
 
@@ -32,7 +46,31 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                {
+                        user?.email ? <div className="dropdown dropdown-end">
+                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar online">
+                                <div className="w-12 rounded-full">
+                                    <img src={user.photoURL} alt='' />
+                                </div>
+                            </label>
+                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li>
+                                    <button className="btn btn-ghost">{user.displayName}</button>
+
+                                </li>
+                                <li>
+                                    <button className="btn  btn-ghost"
+                                        onClick={handelLogOut}
+                                    >Sign Out</button>
+
+                                </li>
+                            </ul>
+                        </div>
+                            :
+                            <Link to='/login'>
+                                <button className="btn btn-sm  btn-ghost">Sign In</button>
+                            </Link>
+                    }
                 </div>
             </div>
 

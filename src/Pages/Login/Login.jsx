@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import { FaGoogle } from 'react-icons/fa';
 
 
 
@@ -78,16 +79,12 @@ const Login = () => {
                             <p>Do not Have An Account ? <Link className="text-[#F75B5F]" to='/register'>Register</Link></p>
                         </form>
 
-                        <div className="text-center">
-                            {/* {
-                                match && <p className="text-red-500">{match}</p>
-                            } */}
-                        </div>
+                      
 
                         <div className="">
                             <button className="btn w-full">
 
-                                Login with Google
+                               <FaGoogle></FaGoogle>
                             </button>
                         </div>
                     </div>
