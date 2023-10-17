@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer";
 import Banner from "../../components/Header/Banner";
 import OurItems from "../../components/OurItems/OurItems";
 
@@ -57,6 +58,10 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            </div>
+
+            <div>
+                <Footer></Footer>
             </div>
         </div>
     );
