@@ -4,8 +4,8 @@ const Navbar = () => {
     const navLinks = <>
 
         <li className="font-semibold"><NavLink to='/'>Home</NavLink></li>
-        <li className="font-semibold"><NavLink to='/pages'>Add Product</NavLink></li>
-        <li className="font-semibold"><NavLink to='/blog'>My Cart</NavLink></li>
+        <li className="font-semibold"><NavLink to='/addProduct'>Add Product</NavLink></li>
+        <li className="font-semibold"><NavLink to='/myCard'>My Cart</NavLink></li>
         <li className="font-semibold"><NavLink to='/login'>Login</NavLink></li>
         
 

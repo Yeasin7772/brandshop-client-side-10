@@ -37,7 +37,7 @@ const Login = () => {
                                 <button type="submit" className="btn btn-primary">Login</button>
                             </div>
 
-                            <p>Do not Have An Account ? <Link className="text-[#F75B5F]" to='/register'>Register</Link></p>
+                            <p>Do not Have An Account ?</p>
                         </form>
 
                         <div className="text-center">
@@ -48,7 +48,7 @@ const Login = () => {
 
                         <div className="">
                             <button className="btn w-full">
-                                <FaGoogle className="text-blue-700"></FaGoogle>
+                               
                                 Login with Google
                             </button>
                         </div>
