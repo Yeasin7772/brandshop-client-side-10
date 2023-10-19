@@ -13,7 +13,7 @@ const OurItems = () => {
                 {/* item 01 */}
                 <div className="card card-compact  ">
                     <figure>
-                        <img className="h-56 border" src="https://quattro.true-emotions.studio/wp-content/uploads/2018/09/ozw_assetto-blk-555x555.jpg" alt="Shoes" /></figure>
+                        <img className="h-56 " src="https://quattro.true-emotions.studio/wp-content/uploads/2018/09/ozw_assetto-blk-555x555.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card text-base font-medium underline">Wolfrace Wheels Pro-Lite Eco 2.0</h2>
                         <p className="card-title font-bold">$210.05</p>
@@ -25,7 +25,7 @@ const OurItems = () => {
                 {/* item 02 */}
                 <div className="card card-compact  ">
                     <figure>
-                        <img className="h-56 border" src="https://quattro.true-emotions.studio/wp-content/uploads/2018/09/fol_caliper-laq-r1-555x555.jpg" alt="Shoes" /></figure>
+                        <img className="h-56 " src="https://quattro.true-emotions.studio/wp-content/uploads/2018/09/fol_caliper-laq-r1-555x555.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card underline text-base  font-medium ">Brembo OE Replacement Brake Pads</h2>
                         <p className="card-title font-bold">$150.00</p>
@@ -37,7 +37,7 @@ const OurItems = () => {
                 {/* item 03 */}
                 <div className="card card-compact  ">
                     <figure>
-                        <img className="h-56 border" src="https://quattro.true-emotions.studio/wp-content/uploads/2018/09/meg_g3300-555x555.jpg" alt="Shoes" /></figure>
+                        <img className="h-56 " src="https://quattro.true-emotions.studio/wp-content/uploads/2018/09/meg_g3300-555x555.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card text-base font-medium underline">Meguiar’s Paint Restoration Kit</h2>
                         <p className="card-title font-bold">$28.05</p>
@@ -49,7 +49,7 @@ const OurItems = () => {
                 {/* item 04 */}
                 <div className="card card-compact  ">
                     <figure>
-                        <img className="h-56 border" src="https://quattro.true-emotions.studio/wp-content/uploads/2018/09/spa_club-x1-blk-555x555.jpg" alt="Shoes" /></figure>
+                        <img className="h-56 " src="https://quattro.true-emotions.studio/wp-content/uploads/2018/09/spa_club-x1-blk-555x555.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card text-base font-medium underline">Racewear & Helmets</h2>
                         <p className="card-title font-bold">$104.00</p>
@@ -61,7 +61,7 @@ const OurItems = () => {
                 {/* item 05*/}
                 <div className="card card-compact ">
                     <figure>
-                        <img className="h-56 border" src="https://quattro.true-emotions.studio/wp-content/uploads/2018/09/for_fmdvspltr_blk-555x555.jpg" alt="Shoes" /></figure>
+                        <img className="h-56 " src="https://quattro.true-emotions.studio/wp-content/uploads/2018/09/for_fmdvspltr_blk-555x555.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card text-base font-medium underline">Forge “Split R” Splitter Valve</h2>
                         <p className="card-title font-bold">$123.05</p>
@@ -73,7 +73,7 @@ const OurItems = () => {
                 {/* item 06*/}
                 <div className="card card-compact ">
                     <figure>
-                        <img className="h-56 border" src="https://quattro.true-emotions.studio/wp-content/uploads/2018/09/mshmmtmic-wrx-08bkrd1-555x555.jpg" alt="Shoes" /></figure>
+                        <img className="h-56 " src="https://quattro.true-emotions.studio/wp-content/uploads/2018/09/mshmmtmic-wrx-08bkrd1-555x555.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card text-base font-medium underline">Mishimoto Top-Mount Intercooler</h2>
                         <p className="card-title font-bold">$78.05</p>

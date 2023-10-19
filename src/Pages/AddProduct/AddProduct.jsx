@@ -9,11 +9,11 @@ const AddProduct = () => {
         const image = form.image.value;
         const name = form.name.value;
         const Price = form.Price.value;
-        const brand = form.brand.value
+        const brand_name = form.brand_name.value
         const rating = form.rating.value
         const description = form.description.value
         //console.log(image, name, Price, brand, rating, description);
-        const newCar = { image, name, Price, brand, rating, description }
+        const newCar = { image, name, Price, brand_name, rating, description }
         console.log(newCar);
         form.reset()
 
@@ -67,7 +67,7 @@ const AddProduct = () => {
                             <label className="label">
                                 <span className="label-text">Band Name</span>
                             </label>
-                            <input name="brand" required type="text" placeholder="Band Name" className="input input-bordered" />
+                            <input name="brand_name" required type="text" placeholder="Band Name" className="input input-bordered" />
 
                         </div>
                         <div className="form-control">

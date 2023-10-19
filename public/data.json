@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "name": "Toyota",
+      "image": "https://i.ibb.co/KGTfgtc/white-sport-sedan-with-colorful-tuning-road.jpg",
+      "title": "Japanese Automobile Manufacturer"
+    },
+    {
+      "id": 2,
+      "name": "Ford",
+      "image": "https://i.ibb.co/fqjnd5T/23369.jpg",
+      "title": "American Automobile Manufacturer"
+    },
+    {
+      "id": 3,
+      "name": "BMW",
+      "image": "https://i.ibb.co/vCWnw66/37121.jpg",
+      "title": "German Luxury Automobile Manufacturer"
+    },
+    {
+      "id": 4,
+      "name": "Mercedes-Benz",
+      "image": "https://i.ibb.co/RYP028q/3529803-64384.jpg",
+      "title": "German Luxury Automobile Manufacturer"
+    },
+    {
+      "id": 5,
+      "name": "Tesla",
+      "image": "https://i.ibb.co/xCn1HzN/3d-electric-car-with-charged-battery-1.jpg",
+      "title": "Electric Vehicle Manufacturer"
+    },
+    {
+      "id": 6,
+      "name": "Honda",
+      "image": "https://i.ibb.co/sJ2Zk8m/3529838-64419.jpg",
+      "title": "Japanese Automobile Manufacturer"
+    }
+  ]
+  
