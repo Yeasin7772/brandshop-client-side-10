@@ -124,7 +124,9 @@ const Home = () => {
 
 
                     {
-                        brands.map(brand => <div key={brand.id}>
+                        brands.map(brand => <Link key={brand.id} to={`/toyota/${brand.name}`}>
+                        
+                        <div >
 
                             <div className="card  bg-base-100 shadow-xl">
                                 <figure className="">
@@ -135,7 +137,7 @@ const Home = () => {
 
                                 </div>
                             </div>
-                        </div>)
+                        </div></Link>)
                     }
 
 

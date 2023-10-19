@@ -7,6 +7,7 @@ import AddProduct from "../Pages/AddProduct/AddProduct";
 import AddCard from "../Pages/AddCard/AddCard";
 import Register from "../Pages/Register/Register";
 import Toyota from "../Pages/Toyota";
+import UpdateData from "../Pages/UpdateData/UpdateData";
 
 
 const Routes = createBrowserRouter([
@@ -33,9 +34,15 @@ const Routes = createBrowserRouter([
             {
                 path:'/toyota',
                 element:<Toyota></Toyota>,
-                loader: () => fetch('http://localhost:5000/automotive/Toyota')
+                loader: () => fetch('http://localhost:5000/automotive')
                 // loader: ({params}) => fetch(`http://localhost:5000/automotive/name${params.name}`)
                 
+
+            },
+            {
+                path:'/update/:id',
+                element:<UpdateData></UpdateData>,
+                loader: ({ params }) => fetch(`http://localhost:5000/automotive/${params.id}`)
 
             },
             {
