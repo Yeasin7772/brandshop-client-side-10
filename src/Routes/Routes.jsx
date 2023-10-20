@@ -8,6 +8,7 @@ import AddCard from "../Pages/AddCard/AddCard";
 import Register from "../Pages/Register/Register";
 import Toyota from "../Pages/Toyota";
 import UpdateData from "../Pages/UpdateData/UpdateData";
+import ToyataDetails from "../Pages/ToyataDetails/ToyataDetails";
 
 
 const Routes = createBrowserRouter([
@@ -38,10 +39,16 @@ const Routes = createBrowserRouter([
                 // loader: ({params}) => fetch(`http://localhost:5000/automotive/name${params.name}`)
                 
 
-            },
+            }, 
             {
                 path:'/update/:id',
                 element:<UpdateData></UpdateData>,
+                loader: ({ params }) => fetch(`http://localhost:5000/automotive/${params.id}`)
+
+            },
+            {
+                path:'/details/:id',
+                element:<ToyataDetails></ToyataDetails>,
                 loader: ({ params }) => fetch(`http://localhost:5000/automotive/${params.id}`)
 
             },

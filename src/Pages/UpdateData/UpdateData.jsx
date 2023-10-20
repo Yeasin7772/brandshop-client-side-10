@@ -1,12 +1,14 @@
-import { useActionData } from "react-router-dom";
+import {  useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
 const UpdateData = () => {
 
-    const automotive = useActionData()
+    const automotive = useLoaderData()
     console.log(automotive);
     const { _id, image, name, Price, brand_name, rating, description } = automotive || {}
+    console.log(_id);
+
 
 
     const handelUpdate = e => {
@@ -35,7 +37,7 @@ const UpdateData = () => {
                 if (data.modifiedCount > 0) {
                     Swal.fire({
                         title: 'success!',
-                        text: 'Coffee added successfully',
+                        text: 'Update successfully',
                         icon: 'success',
                         confirmButtonText: 'Cool'
                     })
@@ -47,7 +49,7 @@ const UpdateData = () => {
         <div className="flex justify-center items-center">
             <div>
                 <div className="text-4xl text-center font-bold mb-5">
-                    <h1>Add Your Car</h1>
+                    <h1>Add Your Car{description}</h1>
                 </div>
 
                 <div className="bg-[#F9F6E2] sm:static md:w-[700px]  ">
@@ -96,7 +98,7 @@ const UpdateData = () => {
                             <input name="image" type="Image URL" defaultValue={image} placeholder="Image URL" className="input input-bordered" />
                         </div>
                         <div className="form-control mt-6">
-                            <button type="submit" className="btn bg-[#F00] text-white">Add to click</button>
+                            <button type="submit" value="Update" className="btn bg-[#F00] text-white">Add to click</button>
                         </div>
 
 
