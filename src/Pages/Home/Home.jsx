@@ -6,7 +6,7 @@ import OurItems from "../../components/OurItems/OurItems";
 
 const Home = () => {
     const brands = useLoaderData()
-    console.log(brands);
+    //console.log(brands);
     return (
         <div>
             <Banner></Banner>
@@ -124,7 +124,7 @@ const Home = () => {
 
 
                     {
-                        brands.map(brand => <Link key={brand.id} to={`/toyota/${brand.name}`}>
+                        brands?.map(brand => <Link key={brand.id} to={`/toyota/${brand.name}`}>
                         
                         <div >
 
