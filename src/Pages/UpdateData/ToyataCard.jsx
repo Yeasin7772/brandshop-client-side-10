@@ -1,52 +1,9 @@
 import { Link } from "react-router-dom";
-import Swal from "sweetalert2";
-import { FaEye, FaRegEdit, FaRegTrashAlt } from 'react-icons/fa';
 
-
-
-const ToyataCard = ({ toyotas, automotives, setAutomotives }) => {
+const ToyataCard = ({ toyotas}) => {
     console.log(toyotas);
 
-
-
-
-    // const { image,name, Price, brand_name, rating, description } = toyotas || {}
-    const handelDelete = (_id) => {
-        console.log(_id);
-        Swal.fire({
-            title: 'Are you sure?',
-            text: "You won't be able to revert this!",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!'
-        })
-            .then((result) => {
-                if (result.isConfirmed) {
-
-                    fetch(`http://localhost:5000/automotive/${_id}`, {
-                        method: 'DELETE'
-                    })
-                        .then(res => res.json())
-                        .then(data => {
-                            console.log(data);
-                            if (data.deletedCount > 0) {
-                                Swal.fire(
-                                    'Deleted!',
-                                    " has been deleted.",
-                                    'success'
-                                )
-
-                                const remaining = automotives.filter(automotive => automotive._id !== _id)
-                                setAutomotives(remaining)
-
-                            }
-                        })
-                }
-            })
-
-    }
+  
     return (
         <div className="mt-10">
 

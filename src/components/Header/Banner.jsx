@@ -11,7 +11,7 @@ const Banner = () => {
                     <div className="max-w-md">
                         <h1 className="mb-5 text-5xl font-bold text-[#F00]">QUATTRO</h1>
                         <p className="mb-5 text-gray-200"> It is a long established fact that a reader will bedistracted by the readable</p>
-                        <input type="text" placeholder="Find your brand" className="input input-bordered input-info w-full max-w-xs" />
+                       
                     </div>
                 </div>
             </div>
