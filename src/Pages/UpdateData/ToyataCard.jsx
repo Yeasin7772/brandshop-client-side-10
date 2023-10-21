@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
+import { FaEye, FaRegEdit, FaRegTrashAlt } from 'react-icons/fa';
+
 
 
 const ToyataCard = ({ toyotas, automotives, setAutomotives }) => {
     console.log(toyotas);
+
+
+
+
     // const { image,name, Price, brand_name, rating, description } = toyotas || {}
     const handelDelete = (_id) => {
         console.log(_id);
@@ -54,7 +60,7 @@ const ToyataCard = ({ toyotas, automotives, setAutomotives }) => {
                                     {toyota.name}
                                     <div className="badge badge-secondary">NEW</div>
                                 </h2>
-                                <p className="card-title">${toyota.Price}</p>
+                                <p className="card-title">Price: ${toyota.Price}</p>
                                 <div className="rating">
                                     <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
@@ -62,13 +68,18 @@ const ToyataCard = ({ toyotas, automotives, setAutomotives }) => {
                                     <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
                                 </div>
+                             
                                 <div className="card-actions justify-end">
+                                    {/* <Link to={`/myCard/${toyota._id}`} >
+                                    <button className="btn btn-outline btn-success">Save </button>
+                                    </Link> */}
                                     <Link to={`/details/${toyota._id}`} >
-                                    <button className="badge badge-outline">Details</button>
+                                        <button className="btn btn-outline btn-warning">Details </button>
                                     </Link>
-                                    <button onClick={() => handelDelete(toyota._id)} className="badge badge-outline">Delete</button>
+                                    {/* <button onClick={() => handelDelete(toyota._id)}
+                                     className="btn btn-outline btn-error">Delete</button> */}
                                     <Link to={`/update/${toyota._id}`}>
-                                        <button className="badge badge-outline">Update</button>
+                                        <button className="btn btn-outline btn-info">Update</button>
                                     </Link>
 
 

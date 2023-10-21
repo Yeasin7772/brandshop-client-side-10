@@ -110,9 +110,9 @@ const Home = () => {
 
 
 
-            <div className="mt-10">
+            <div className="mt-10 mb-10">
 
-                <div className=" text-center space-y-4">
+                <div className=" text-center space-y-4 mb-10">
                     <h1 className="text-4xl font-bold"> Our Premium Brands </h1>
                     <p className="text-sm font-medium">top-notch automotive service that specializes in providing maintenance, <br /> repairs, and customization for leading car brands, including Toyota, Ford, </p>
 
@@ -125,19 +125,19 @@ const Home = () => {
 
                     {
                         brands?.map(brand => <Link key={brand.id} to={`/toyota/${brand.name}`}>
-                        
-                        <div >
 
-                            <div className="card  bg-base-100 shadow-xl">
-                                <figure className="">
-                                    <img src={brand.image} alt="Shoes" className="rounded-xl w-fll h-40" />
-                                </figure>
-                                <div className="card-body items-center text-center">
-                                    <h2 className="card-title">{brand.name}</h2>
+                            <div >
 
+                                <div className="card  bg-base-100 shadow-xl">
+                                    <figure className="">
+                                        <img src={brand.image} alt="Shoes" className="rounded-xl w-fll h-40" />
+                                    </figure>
+                                    <div className="card-body items-center text-center">
+                                        <h2 className="card-title">{brand.name}</h2>
+
+                                    </div>
                                 </div>
-                            </div>
-                        </div></Link>)
+                            </div></Link>)
                     }
 
 
@@ -149,64 +149,72 @@ const Home = () => {
 
 
 
-            <div className="bg-[#F8F8F8]">
+            <div className="">
                 <OurItems></OurItems>
             </div>
 
 
 
 
-            <div className="grid grid-cols-1 md:grid-cols-3 bg-[#F8F8F8]">
+            <div className="mt-10 mb-5 ">
+                <div className=" text-center space-y-4 mt-10 ">
+                    <h1 className="text-3xl font-bold ">Official Service </h1>
+                    <p className=" font-medium"><small>It is a long established fact that a 
+                        reader will bedistracted by the readable</small></p>
+             
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 ">
 
-                <div className="card  ">
-                    <figure className="px-10 pt-10">
-                        <img src="https://i.ibb.co/ws2ZqK2/fast.jpg" alt="Shoes" className="rounded-full h-28" />
-                    </figure>
-                    <div className="card-body items-center text-center">
-                        <h2 className="card-title ">Fast Clearance</h2>
-                        <p className="text-[#6c757d]">Excepteur sint occaecat cupidatat dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-                        <div className="card-actions">
-                            <button className="btn bg-[#F00] text-white">read more...</button>
+                    <div className="card  ">
+                        <figure className="px-10 pt-10">
+                            <img src="https://i.ibb.co/ws2ZqK2/fast.jpg" alt="Shoes" className="rounded-full h-28" />
+                        </figure>
+                        <div className="card-body items-center text-center">
+                            <h2 className="card-title ">Fast Clearance</h2>
+                            <p className="text-[#6c757d]">Excepteur sint occaecat cupidatat dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            <div className="card-actions">
+                                <button className="btn bg-[#F00] text-white">read more...</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                {/* card 02 */}
-                <div className="card  ">
-                    <figure className="px-10 pt-10">
-                        <img src="https://i.ibb.co/8XxvDWM/cler.jpg" alt="Shoes" className="rounded-full h-28" />
-                    </figure>
-                    <div className="card-body items-center text-center">
-                        <h2 className="card-title ">Fast Clearance</h2>
-                        <p className="text-[#6c757d]">Excepteur sint occaecat cupidatat dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-                        <div className="card-actions">
-                            <button className="btn bg-[#F00] text-white">read more...</button>
+                    {/* card 02 */}
+                    <div className="card  ">
+                        <figure className="px-10 pt-10">
+                            <img src="https://i.ibb.co/8XxvDWM/cler.jpg" alt="Shoes" className="rounded-full h-28" />
+                        </figure>
+                        <div className="card-body items-center text-center">
+                            <h2 className="card-title ">Fast Clearance</h2>
+                            <p className="text-[#6c757d]">Excepteur sint occaecat cupidatat dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            <div className="card-actions">
+                                <button className="btn bg-[#F00] text-white">read more...</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                {/* card 03 */}
-                <div className="card   ">
-                    <figure className="px-10 pt-10">
-                        <img src="https://i.ibb.co/vP2qzvp/ex2.jpg" alt="Shoes" className="rounded-full h-28" />
-                    </figure>
-                    <div className="card-body items-center text-center">
-                        <h2 className="card-title">Warranty Service</h2>
-                        <p className="text-[#6c757d]">Ut enim ad minima veniam,
-                            quis nostrum exercitationem ullam corporis suscipit laboriosam, aliquid ex commodi</p>
-                        <div className="card-actions">
-                            <button className="btn bg-[#F00] text-white">read more...</button>
+                    {/* card 03 */}
+                    <div className="card   ">
+                        <figure className="px-10 pt-10">
+                            <img src="https://i.ibb.co/vP2qzvp/ex2.jpg" alt="Shoes" className="rounded-full h-28" />
+                        </figure>
+                        <div className="card-body items-center text-center">
+                            <h2 className="card-title">Warranty Service</h2>
+                            <p className="text-[#6c757d]">Ut enim ad minima veniam,
+                                quis nostrum exercitationem ullam corporis suscipit laboriosam, aliquid ex commodi</p>
+                            <div className="card-actions">
+                                <button className="btn bg-[#F00] text-white">read more...</button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
 
 
 
 
 
-            <div>
+            <div >
                 <Footer></Footer>
             </div>
         </div>

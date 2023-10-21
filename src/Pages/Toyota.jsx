@@ -39,7 +39,7 @@ const Toyota = () => {
     <div>
 
       <div>
-        <ToyataCard toyotas={toyotas}
+        <ToyataCard toyotas={toyotas} 
           setAutomotives={setAutomotives}
           automotives={automotives}
         ></ToyataCard>

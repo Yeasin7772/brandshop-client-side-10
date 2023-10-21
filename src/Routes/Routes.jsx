@@ -9,6 +9,7 @@ import Register from "../Pages/Register/Register";
 import Toyota from "../Pages/Toyota";
 import UpdateData from "../Pages/UpdateData/UpdateData";
 import ToyataDetails from "../Pages/ToyataDetails/ToyataDetails";
+import PrivateRoutes from "./PrivateRoutes";
 
 
 const Routes = createBrowserRouter([
@@ -24,12 +25,14 @@ const Routes = createBrowserRouter([
             },
             {
                 path: '/addProduct',
-                element: <AddProduct></AddProduct>
+                element: <PrivateRoutes><AddProduct></AddProduct></PrivateRoutes>
 
             },
             {
                 path: '/myCard',
-                element: <AddCard></AddCard>
+                element: <PrivateRoutes><AddCard></AddCard></PrivateRoutes>,
+                // loader: ({ params }) => fetch(`http://localhost:5000/automotive/${params.id}`)
+
 
             },
             {
@@ -42,13 +45,13 @@ const Routes = createBrowserRouter([
             }, 
             {
                 path:'/update/:id',
-                element:<UpdateData></UpdateData>,
+                element:<PrivateRoutes><UpdateData></UpdateData></PrivateRoutes>,
                 loader: ({ params }) => fetch(`http://localhost:5000/automotive/${params.id}`)
 
             },
             {
                 path:'/details/:id',
-                element:<ToyataDetails></ToyataDetails>,
+                element:<PrivateRoutes><ToyataDetails></ToyataDetails></PrivateRoutes>,
                 loader: ({ params }) => fetch(`http://localhost:5000/automotive/${params.id}`)
 
             },

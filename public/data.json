@@ -2,37 +2,37 @@
     {
       "id": 1,
       "name": "Toyota",
-      "image": "https://i.ibb.co/KGTfgtc/white-sport-sedan-with-colorful-tuning-road.jpg",
+      "image": "https://i.ibb.co/ZNZm5p9/emblem-ogp-001.png",
       "title": "Japanese Automobile Manufacturer"
     },
     {
       "id": 2,
       "name": "Ford",
-      "image": "https://i.ibb.co/fqjnd5T/23369.jpg",
+      "image": "https://i.ibb.co/ykr2h5p/567-ford.jpg",
       "title": "American Automobile Manufacturer"
     },
     {
       "id": 3,
-      "name": "BMW ",
-      "image": "https://i.ibb.co/vCWnw66/37121.jpg",
+      "name": "BMW",
+      "image": "https://i.ibb.co/xSKbRMS/images-3.jpg",
       "title": "German Luxury Automobile Manufacturer"
     },
     {
       "id": 4,
       "name": "Mercedes",
-      "image": "https://i.ibb.co/RYP028q/3529803-64384.jpg",
+      "image": "https://i.ibb.co/ZdxyNst/png-transparent-mercedes-benz-logo-audi-car-bmw-mercedes-benz-luxury-vehicle-mercedes-benz-logo-misc.png",
       "title": "German Luxury Automobile Manufacturer"
     },
     {
       "id": 5,
       "name": "Tesla",
-      "image": "https://i.ibb.co/xCn1HzN/3d-electric-car-with-charged-battery-1.jpg",
+      "image": "https://i.ibb.co/F3Fpr5c/download-5.jpg",
       "title": "Electric Vehicle Manufacturer"
     },
     {
       "id": 6,
       "name": "Honda",
-      "image": "https://i.ibb.co/sJ2Zk8m/3529838-64419.jpg",
+      "image": "https://i.ibb.co/Pjk4ydW/Honda-Logo.png",
       "title": "Japanese Automobile Manufacturer"
     }
   ]

@@ -49,7 +49,7 @@ const UpdateData = () => {
         <div className="flex justify-center items-center">
             <div>
                 <div className="text-4xl text-center font-bold mb-5">
-                    <h1>Add Your Car{description}</h1>
+                    <h1>Update Your Car</h1>
                 </div>
 
                 <div className="bg-[#F9F6E2] sm:static md:w-[700px]  ">

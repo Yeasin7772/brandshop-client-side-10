@@ -7,17 +7,23 @@ import { FaGoogle } from 'react-icons/fa';
 
 
 const Login = () => {
-    const { signIn } = useContext(AuthContext)
+    const { signIn, googleLogin } = useContext(AuthContext)
 
     const location = useLocation()
-      // console.log('location', location);
+    // console.log('location', location);
     const navigate = useNavigate()
- 
+
+    const handelGoogle = () => {
+        googleLogin()
+
+    }
     const handelLogin = e => {
         e.preventDefault()
         const email = e.target.email.value;
         const password = e.target.password.value
         console.log(email, password);
+
+      
 
 
         signIn(email, password)
@@ -31,7 +37,7 @@ const Login = () => {
                     title: "Login successfully",
                     showConfirmButton: false,
                     timer: 1500
-                  })
+                })
             })
             .catch(error => {
                 console.error(error);
@@ -41,7 +47,7 @@ const Login = () => {
                     title: "Invalidate Password",
                     showConfirmButton: false,
                     timer: 1500
-                  })
+                })
 
             })
 
@@ -79,12 +85,12 @@ const Login = () => {
                             <p>Do not Have An Account ? <Link className="text-[#F75B5F]" to='/register'>Register</Link></p>
                         </form>
 
-                      
+
 
                         <div className="">
-                            <button className="btn w-full">
+                            <button onClick={handelGoogle} className="btn w-full">
 
-                               <FaGoogle></FaGoogle>
+                                <FaGoogle></FaGoogle>
                             </button>
                         </div>
                     </div>
