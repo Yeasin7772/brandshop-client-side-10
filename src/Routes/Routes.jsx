@@ -31,28 +31,28 @@ const Routes = createBrowserRouter([
             {
                 path: '/myCard',
                 element: <PrivateRoutes><AddCard></AddCard></PrivateRoutes>,
-                // loader: ({ params }) => fetch(`http://localhost:5000/automotive/${params.id}`)
+                // loader: ({ params }) => fetch(`https://automotive-server-shop-l5p0bj4sm-yeasin-mollas-projects.vercel.app/automotive/${params.id}`)
 
 
             },
             {
                 path:'/toyota/:name',
                 element:<Toyota></Toyota>,
-                loader: () => fetch('http://localhost:5000/automotive')
-                // loader: ({params}) => fetch(`http://localhost:5000/automotive/name${params.name}`)
+                loader: () => fetch('https://automotive-server-shop-l5p0bj4sm-yeasin-mollas-projects.vercel.app/automotive')
+                // loader: ({params}) => fetch(`https://automotive-server-shop-l5p0bj4sm-yeasin-mollas-projects.vercel.app/automotive/name${params.name}`)
                 
 
             }, 
             {
                 path:'/update/:id',
                 element:<PrivateRoutes><UpdateData></UpdateData></PrivateRoutes>,
-                loader: ({ params }) => fetch(`http://localhost:5000/automotive/${params.id}`)
+                loader: ({ params }) => fetch(`https://automotive-server-shop-l5p0bj4sm-yeasin-mollas-projects.vercel.app/automotive/${params.id}`)
 
             },
             {
                 path:'/details/:id',
                 element:<PrivateRoutes><ToyataDetails></ToyataDetails></PrivateRoutes>,
-                loader: ({ params }) => fetch(`http://localhost:5000/automotive/${params.id}`)
+                loader: ({ params }) => fetch(`https://automotive-server-shop-l5p0bj4sm-yeasin-mollas-projects.vercel.app/automotive/${params.id}`)
 
             },
             {

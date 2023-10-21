@@ -17,7 +17,7 @@ const AddProduct = () => {
         console.log(newCar);
         form.reset()
 
-        fetch('http://localhost:5000/automotive', {
+        fetch('https://automotive-server-shop-l5p0bj4sm-yeasin-mollas-projects.vercel.app/automotive', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

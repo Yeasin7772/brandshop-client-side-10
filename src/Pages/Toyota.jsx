@@ -20,7 +20,7 @@ const Toyota = () => {
     //const mapItems = filterItems.map(filterItem => setToyota(mapItems))
 
 
-    // fetch ('http://localhost:5000/automotive/:brand_name')
+    // fetch ('https://automotive-server-shop-l5p0bj4sm-yeasin-mollas-projects.vercel.app/automotive/:brand_name')
     // .then(res => res.json())
     // .then(datas => {
     //     console.log(datas);

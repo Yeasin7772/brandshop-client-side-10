@@ -11,7 +11,7 @@ const AddCard = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/getCart/${user?.email}`)
+        fetch(`https://automotive-server-shop-l5p0bj4sm-yeasin-mollas-projects.vercel.app/getCart/${user?.email}`)
             .then(res => res.json())
             .then(data => setData(data))
     }, [user?.email])
@@ -31,7 +31,7 @@ const AddCard = () => {
             .then((result) => {
                 if (result.isConfirmed) {
 
-                    fetch(`http://localhost:5000/getCart/${_id}`, {
+                    fetch(`https://automotive-server-shop-l5p0bj4sm-yeasin-mollas-projects.vercel.app/getCart/${_id}`, {
                         method: 'DELETE'
                     })
                         .then(res => res.json())

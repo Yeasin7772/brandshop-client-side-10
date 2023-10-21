@@ -24,7 +24,7 @@ const UpdateData = () => {
         const updateData = { image, name, Price, brand_name, rating, description }
         console.log(updateData);
         form.reset()
-        fetch(`http://localhost:5000/automotive/${_id}`, {
+        fetch(`https://automotive-server-shop-l5p0bj4sm-yeasin-mollas-projects.vercel.app/automotive/${_id}`, {
             method: "PUT",
             headers: {
                 'Content-Type': 'application/json'

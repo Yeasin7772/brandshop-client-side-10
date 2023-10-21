@@ -25,7 +25,7 @@ const ToyataDetails = () => {
         newData.userName = user.displayName
         newData.userEmail = user.email
 
-        fetch('http://localhost:5000/addToCard', {
+        fetch('https://automotive-server-shop-l5p0bj4sm-yeasin-mollas-projects.vercel.app/addToCard', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
